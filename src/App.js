@@ -29,7 +29,7 @@ function App() {
     })
     dispatch({type:actionTypes.FETCH_RANDEVULAR_START})
     api.get(urls.randevular)
-    .then((res)=>{dispatch({type:actionTypes.FETCH_RANDEVULAR?SUCCESS,payload:res.data})})
+    .then((res)=>{dispatch({type:actionTypes.FETCH_RANDEVULAR_SUCCESS,payload:res.data})})
     .catch((err)=>{
       dispatch({type:actionTypes.FETCH_RANDEVULAR_FAIL,payload:"Randevuları çekerken hata oluştu"})
 

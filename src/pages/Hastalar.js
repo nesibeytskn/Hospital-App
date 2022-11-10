@@ -18,7 +18,7 @@ import EditHastaModal from "../compoenents/EditHastaModal";
 
 const Hastalar = (props) => {
   const navigate = useNavigate();
-  const [Hastalar, setHastalar] = useState(null);
+  const [hastalar, setHastalar] = useState(null);
   const [updateComponent, setUpdateComponent] = useState(false);
   const [randevular, setRandevular] = useState(null);
   const [openEditModal, setOpenEditModal] = useState(false);

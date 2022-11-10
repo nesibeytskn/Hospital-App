@@ -15,7 +15,7 @@ const style = {
 };
 
 const EditHastaModal = (props) => {
-  const { open, handleClose, hasta, hastalar, updateComponent } = props;
+  const { open, handleClose, hasta, hastalar, setUpdateComponent } = props;
   const [name, setName] = useState(hasta?.name);
   const [surname, setSurname] = useState(hasta?.surname);
   const [hasNameError, setHasNameError] = useState(false);
@@ -83,9 +83,9 @@ const EditHastaModal = (props) => {
     };
     axios
       .put(`http://localhost:3004/hastalar/${hasta.id}`, updatedHasta)
-      .then((res) => {
+      .then((response) => {
         handleClose();
-        setUpdateComponent(!updateComponent);
+        setUpdateComponent(!setUpdateComponent);
       })
       .catch((err) => console.log(err));
   };
@@ -167,7 +167,7 @@ const EditHastaModal = (props) => {
               {hasPhoneError && (
                 <p>
                   <small style={{ color: "orangered" }}>
-                    {phoneErrorMessage}
+                    {hasPhoneErrorMessage}
                   </small>
                 </p>
               )}
