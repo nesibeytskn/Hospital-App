@@ -1,15 +1,15 @@
-import { combineReducer, creaateStore } from "redux";
+import { combineReducers, createStore } from 'redux';
 
 import hastalarReducer from "./reducers/hastalarReducer";
 import randevularReducer from "./reducers/randevularReducer";
 import islemlerReducer from "./reducers/islemlerReducer";
 
-const rootReducer = combineReducer({
+const rootReducer = combineReducers({
   hastalarState: hastalarReducer,
   randevularState: randevularReducer,
-  islemlerState: islemlerReducer,
+  islemlerState: islemlerReducer
 });
 
-const store = creaateStore(rootReducer);
+const store = createStore(rootReducer);
 
 export default store;
