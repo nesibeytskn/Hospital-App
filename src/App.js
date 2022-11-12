@@ -17,7 +17,8 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: actionTypes.FETCH_HASTALAR_START });
-    api.get(urls.hastalar)
+    api
+      .get(urls.hastalar)
       .then((res) => {
         dispatch({
           type: actionTypes.FETCH_HASTALAR_SUCCESS,
@@ -31,7 +32,8 @@ function App() {
         });
       });
     dispatch({ type: actionTypes.FETCH_RANDEVULAR_START });
-    api.get(urls.randevular)
+    api
+      .get(urls.randevular)
       .then((res) => {
         dispatch({
           type: actionTypes.FETCH_RANDEVULAR_SUCCESS,
@@ -45,7 +47,8 @@ function App() {
         });
       });
     dispatch({ type: actionTypes.FETCH_ISLEMLER_START });
-    api.get(urls.islemler)
+    api
+      .get(urls.islemler)
       .then((res) => {
         dispatch({
           type: actionTypes.FETCH_ISLEMLER_SUCCESS,

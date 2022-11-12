@@ -1,0 +1,61 @@
+{
+  "randevular": [
+    {
+      "id": "1668197093772",
+      "date": "2022-11-14T23:04",
+      "hastaId": "1668196517852"
+    },
+    {
+      "id": "1668197115434",
+      "date": "2022-11-15T23:04",
+      "hastaId": "1668197115433"
+    },
+    {
+      "id": "1668197151260",
+      "date": "2022-11-12T23:05",
+      "hastaId": "1668196517852"
+    }
+  ],
+  "hastalar": [
+    {
+      "id": "1668196517852",
+      "name": "deneme11",
+      "surname": "deneme11",
+      "phone": "05555555551",
+      "islemIds": ["1668196517843", "1668197093773", "1668197151261"]
+    },
+    {
+      "id": "1668197115433",
+      "name": "deneme2",
+      "surname": "deneme2",
+      "islemIds": ["1668197115432"],
+      "phone": "05555555552"
+    }
+  ],
+  "islemler": [
+    {
+      "id": "1668196517843",
+      "sikayet": "deneme1",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": []
+    },
+    {
+      "id": "1668197093773",
+      "sikayet": "deneme1",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": []
+    },
+    {
+      "id": "1668197115432",
+      "sikayet": "deneme2",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": []
+    },
+    {
+      "id": "1668197151261",
+      "sikayet": "deneme1",
+      "uygulananTedavi": "",
+      "yazilanIlaclar": []
+    }
+  ]
+}
